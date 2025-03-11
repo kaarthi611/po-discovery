@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  planner-assistant:
+    image: kaarthi611/plans-assistant:latest
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    restart: always

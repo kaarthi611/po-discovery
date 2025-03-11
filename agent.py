@@ -25,7 +25,7 @@ load_dotenv()
 
 # Initialize the tools
 db_tool = DatabaseQueryTool()
-api_tool = ApiTool(os.getenv("API_BASE_URL", "http://35.182.5.113:5001"))
+api_tool = ApiTool(os.getenv("API_BASE_URL", "http://35.182.5.113:8080"))
 
 # Set up the LLM
 anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
